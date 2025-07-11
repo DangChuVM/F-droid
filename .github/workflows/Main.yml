@@ -1,0 +1,42 @@
+name: F-Droid Auto Update on APK Change
+
+on:
+  push:
+    paths:
+      - 'repo/*.apk'   # Chạy khi có thay đổi file .apk trong thư mục repo/
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install fdroidserver and dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fdroidserver wget unzip sha256sum
+
+      - name: Setup Android SDK (commandlinetools r6858069)
+        run: |
+          mkdir -p $HOME/android-sdk-linux
+          cd $HOME/android-sdk-linux
+
+          wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
+          echo "87f6dcf41d4e642e37ba03cb2e387a542aa0bd73cb689a9e7152aad40a6e7a08  commandlinetools-linux-6858069_latest.zip" | sha256sum -c
+          unzip commandlinetools-linux-6858069_latest.zip
+
+          mkdir -p $HOME/android-sdk-linux/cmdline-tools/latest
+          mv cmdline-tools/* $HOME/android-sdk-linux/cmdline-tools/latest/
+
+          echo "ANDROID_HOME=$HOME/android-sdk-linux" >> $GITHUB_ENV
+          echo "$HOME/android-sdk-linux/cmdline-tools/latest/bin" >> $GITHUB_PATH
+
+      - name: Install platform-tools and build-tools
+        run: |
+          sdkmanager --sdk_root="$ANDROID_HOME" platform-tools "build-tools;30.0.3"
+
+      - name: Run fdroid update at root
+        run: |
+          fdroid update
