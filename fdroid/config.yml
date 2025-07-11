@@ -63,8 +63,8 @@ repo_name: Chuong First F-Droid Android share
 
 # As above, but for the archive repo.
 #
-archive_url: https://dangchuvm.github.io/fdroid/repo
-archive_name: Chuong F-Droid Archives
+#archive_url: https://dangchuvm.github.io/fdroid/repo
+#archive_name: Chuong F-Droid Archives
 # archive_description: >-
 #   The repository of older versions of packages from the main demo repository.
 
