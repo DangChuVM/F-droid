@@ -52,7 +52,7 @@ sdk_path: /usr/lib/android-sdk
 
 # Canonical URL of the repositoy, needs to end in /repo. Is is used to identity
 # the repo in the client, as well.
- repo_url: https://dangchuvm.github.io/F-droid/repo
+ repo_url: https://dangchuvm.github.io/F-droid/fdroid/repo
  repo_name: Chuong First F-Droid Android share
 # repo_description: >-
 #   This is a repository of apps to be used with F-Droid. Applications
