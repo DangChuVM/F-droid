@@ -17,6 +17,9 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y fdroidserver wget unzip git
+      - name: cd vao thu muc
+        run: |
+          sudo cd fdroid
 
       - name: Setup Android SDK (commandline tools r6858069)
         run: |
@@ -49,6 +52,7 @@ jobs:
 
       - name: Commit and push entire repository if changed
         run: |
+          cd ..
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
