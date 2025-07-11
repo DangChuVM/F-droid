@@ -16,7 +16,7 @@ jobs:
       - name: Install fdroidserver and tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y fdroidserver wget unzip sha256sum git
+          sudo apt-get install -y fdroidserver wget unzip git
 
       - name: Setup Android SDK (commandline tools r6858069)
         run: |
