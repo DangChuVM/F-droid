@@ -23,6 +23,8 @@ jobs:
         run: |
           mkdir -p $HOME/android-sdk-linux
           cd $HOME/android-sdk-linux
+          sudo fdroid update -c
+          sudo fdroid update
 
           wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
           unzip commandlinetools-linux-6858069_latest.zip -d temp-tools
