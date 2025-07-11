@@ -3,8 +3,8 @@ name: F-Droid Auto Update
 on:
   push:
     paths:
-      - 'fdroid/repo/*.apk'
-  workflow_dispatch:
+      - 'fdroid/repo/*.apk'     # Tự động chạy khi có .apk thay đổi
+  workflow_dispatch:            # Cho phép chạy thủ công từ GitHub UI
 
 jobs:
   build:
@@ -24,14 +24,16 @@ jobs:
           mkdir -p $HOME/android-sdk-linux
           cd $HOME/android-sdk-linux
 
+          # Tải commandline tools
           wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
-          
+
           # ✅ Giải nén ra thư mục tạm để tránh lỗi
           unzip commandlinetools-linux-6858069_latest.zip -d temp-tools
           mkdir -p $HOME/android-sdk-linux/cmdline-tools/latest
           mv temp-tools/cmdline-tools/* $HOME/android-sdk-linux/cmdline-tools/latest/
           rm -rf temp-tools
 
+          # Thiết lập biến môi trường
           echo "ANDROID_HOME=$HOME/android-sdk-linux" >> $GITHUB_ENV
           echo "$HOME/android-sdk-linux/cmdline-tools/latest/bin" >> $GITHUB_PATH
 
