@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'repo/*.apk'  # Chỉ chạy khi có thay đổi tệp .apk trong thư mục repo/
-
+workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
