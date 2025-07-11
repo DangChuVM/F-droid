@@ -3,8 +3,8 @@ name: F-Droid Auto Update
 on:
   push:
     paths:
-      - 'fdroid/repo/*.apk'     # Tự động chạy khi có .apk thay đổi
-  workflow_dispatch:            # Cho phép chạy thủ công từ GitHub UI
+      - 'fdroid/repo/*.apk'     # Chạy khi có .apk thay đổi trong fdroid/repo
+  workflow_dispatch:            # Cho phép chạy thủ công
 
 jobs:
   build:
@@ -24,22 +24,24 @@ jobs:
           mkdir -p $HOME/android-sdk-linux
           cd $HOME/android-sdk-linux
 
-          # Tải commandline tools
           wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
-
-          # ✅ Giải nén ra thư mục tạm để tránh lỗi
           unzip commandlinetools-linux-6858069_latest.zip -d temp-tools
           mkdir -p $HOME/android-sdk-linux/cmdline-tools/latest
           mv temp-tools/cmdline-tools/* $HOME/android-sdk-linux/cmdline-tools/latest/
           rm -rf temp-tools
 
-          # Thiết lập biến môi trường
           echo "ANDROID_HOME=$HOME/android-sdk-linux" >> $GITHUB_ENV
           echo "$HOME/android-sdk-linux/cmdline-tools/latest/bin" >> $GITHUB_PATH
 
       - name: Install platform-tools & build-tools
         run: |
           sdkmanager --sdk_root="$ANDROID_HOME" platform-tools "build-tools;30.0.3"
+
+      - name: Pull latest changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull origin ${{ github.ref_name }} --rebase
 
       - name: Run fdroid update inside fdroid/
         run: |
@@ -57,5 +59,5 @@ jobs:
             echo "✅ Không có thay đổi để commit."
           else
             git commit -m "🤖 Tự động cập nhật F-Droid sau khi thêm .apk"
-            git push origin HEAD
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
           fi
