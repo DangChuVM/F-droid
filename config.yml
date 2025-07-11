@@ -63,8 +63,8 @@ sdk_path: /usr/lib/android-sdk
 
 # As above, but for the archive repo.
 #
-# archive_url: https://f-droid.org/archive
-# archive_name: My First F-Droid Archive Demo
+ archive_url: https://dangchuvm.github.io/F-droid/
+ archive_name: Chuong F-Droid Archives
 # archive_description: >-
 #   The repository of older versions of packages from the main demo repository.
 
