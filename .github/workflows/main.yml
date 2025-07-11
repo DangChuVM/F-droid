@@ -3,8 +3,9 @@ name: F-Droid Auto Update
 on:
   push:
     paths:
-      - 'fdroid/repo/*.apk'  # Chỉ chạy khi có thay đổi tệp .apk trong thư mục repo/
-workflow_dispatch:
+      - 'fdroid/repo/*.apk'   # Chạy khi có thay đổi .apk trong fdroid/repo
+  workflow_dispatch:          # Cho phép chạy thủ công từ GitHub UI
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,29 +17,20 @@ jobs:
       - name: Install fdroidserver and tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y fdroidserver wget unzip git
-      - name: cd vao thu muc
-        run: |
-          sudo cd fdroid
+          sudo apt-get install -y fdroidserver wget unzip sha256sum git
 
       - name: Setup Android SDK (commandline tools r6858069)
         run: |
-          # Tạo thư mục SDK
           mkdir -p $HOME/android-sdk-linux
           cd $HOME/android-sdk-linux
 
-          # Tải đúng bản SDK
           wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
-
-          # Kiểm tra SHA256
           echo "87f6dcf41d4e642e37ba03cb2e387a542aa0bd73cb689a9e7152aad40a6e7a08  commandlinetools-linux-6858069_latest.zip" | sha256sum -c
-
-          # Giải nén và sắp xếp theo đúng cấu trúc
           unzip commandlinetools-linux-6858069_latest.zip
+
           mkdir -p $HOME/android-sdk-linux/cmdline-tools/latest
           mv cmdline-tools/* $HOME/android-sdk-linux/cmdline-tools/latest/
 
-          # Xuất biến môi trường
           echo "ANDROID_HOME=$HOME/android-sdk-linux" >> $GITHUB_ENV
           echo "$HOME/android-sdk-linux/cmdline-tools/latest/bin" >> $GITHUB_PATH
 
@@ -46,13 +38,13 @@ jobs:
         run: |
           sdkmanager --sdk_root="$ANDROID_HOME" platform-tools "build-tools;30.0.3"
 
-      - name: Run fdroid update
+      - name: Run fdroid update inside fdroid/
         run: |
+          cd fdroid
           fdroid update
 
-      - name: Commit and push entire repository if changed
+      - name: Commit and push if changed
         run: |
-          cd ..
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
