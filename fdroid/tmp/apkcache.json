@@ -253,5 +253,281 @@
     "apkName": "NoobDinoUwU_release.apk",
     "icon": "com.noobdinouwu.chuong.1.png",
     "added": 1752296905.047956
+  },
+  "Pojav-Glow-Worm-20250419-arm64-v8a.apk": {
+    "hash": "af44e1baa9c4abcc1e82189fe823169bfc29ac172fcb48ec2f28f213e0f78508",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        28
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        28
+      ],
+      [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.RECORD_AUDIO",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": [],
+    "packageName": "net.kdt.pojavlaunch.firefly",
+    "versionCode": 9999999,
+    "name": "Pojav Glow\u00b7Worm",
+    "versionName": "mume-20250419-aef5f83-main_v3",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 28,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "f3bdc3970ccb9392a7c7c06443061294",
+    "signer": "7c931c87571e25304c152b9ee779d2c4b3c1ea4fd6eaadfe47e48d05bba25854",
+    "size": 175362749,
+    "apkName": "Pojav-Glow-Worm-20250419-arm64-v8a.apk",
+    "added": 1752307057.829403
+  },
+  "Pojav-Glow-Worm-20250419-armeabi-v7a.apk": {
+    "hash": "47541ad077193530f01a9f6c26ab9a9ad93270b296ea63c9af5519fb2a3e729d",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        28
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        28
+      ],
+      [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.RECORD_AUDIO",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": [],
+    "packageName": "net.kdt.pojavlaunch.firefly",
+    "versionCode": 9999999,
+    "name": "Pojav Glow\u00b7Worm",
+    "versionName": "mume-20250419-aef5f83-main_v3",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 28,
+    "nativecode": [
+      "armeabi-v7a"
+    ],
+    "sig": "f3bdc3970ccb9392a7c7c06443061294",
+    "signer": "7c931c87571e25304c152b9ee779d2c4b3c1ea4fd6eaadfe47e48d05bba25854",
+    "size": 168603568,
+    "apkName": "Pojav-Glow-Worm-20250419-armeabi-v7a.apk",
+    "added": 1752307058.971432
+  },
+  "Pojav-Glow-Worm-20250419-x86.apk": {
+    "hash": "72457e146883f1615d512ba9feb432b318efddee4320021000afbe02fc9f8bde",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        28
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        28
+      ],
+      [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.RECORD_AUDIO",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": [],
+    "packageName": "net.kdt.pojavlaunch.firefly",
+    "versionCode": 9999999,
+    "name": "Pojav Glow\u00b7Worm",
+    "versionName": "mume-20250419-aef5f83-main_v3",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 28,
+    "nativecode": [
+      "x86"
+    ],
+    "sig": "f3bdc3970ccb9392a7c7c06443061294",
+    "signer": "7c931c87571e25304c152b9ee779d2c4b3c1ea4fd6eaadfe47e48d05bba25854",
+    "size": 145717010,
+    "apkName": "Pojav-Glow-Worm-20250419-x86.apk",
+    "added": 1752307060.069421
+  },
+  "Pojav-Glow-Worm-20250419-x86_64.apk": {
+    "hash": "f1aaa4f4176353e5c2ac348273290090dc2ce013e3b934f1ec96a72f17b0728b",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        28
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        28
+      ],
+      [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.RECORD_AUDIO",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": [],
+    "packageName": "net.kdt.pojavlaunch.firefly",
+    "versionCode": 9999999,
+    "name": "Pojav Glow\u00b7Worm",
+    "versionName": "mume-20250419-aef5f83-main_v3",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 28,
+    "nativecode": [
+      "x86_64"
+    ],
+    "sig": "f3bdc3970ccb9392a7c7c06443061294",
+    "signer": "7c931c87571e25304c152b9ee779d2c4b3c1ea4fd6eaadfe47e48d05bba25854",
+    "size": 179902928,
+    "apkName": "Pojav-Glow-Worm-20250419-x86_64.apk",
+    "added": 1752307061.336992
   }
 }
