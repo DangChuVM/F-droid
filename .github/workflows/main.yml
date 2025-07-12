@@ -48,7 +48,7 @@ jobs:
       - name: Run fdroid update inside fdroid/
         run: |
           cd fdroid
-          fdroid update
+          fdroid update -c
 
       - name: Commit and push entire repository if changed
         run: |
