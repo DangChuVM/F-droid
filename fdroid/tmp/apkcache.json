@@ -961,5 +961,151 @@
     "apkName": "termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86_64.apk",
     "icon": "com.termux.1022.png",
     "added": 1752308288.365885
+  },
+  "Sketchware.Pro.v6.4.0-rc05-minApi21.apk": {
+    "hash": "6c563e5722583c863d209334dddd4e68d9469f77ccaf929ad2114ee66b24daf2",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.ACCESS_WIFI_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.WAKE_LOCK",
+        null
+      ],
+      [
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {
+      "240": "res/mipmap-hdpi-v4/ic_launcher.png",
+      "160": "res/mipmap-mdpi-v4/ic_launcher.png",
+      "320": "res/mipmap-xhdpi-v4/ic_launcher.png",
+      "480": "res/mipmap-xxhdpi-v4/ic_launcher.png",
+      "640": "res/mipmap-xxxhdpi-v4/ic_launcher.png",
+      "-1": "res/mipmap-mdpi-v4/ic_launcher.png"
+    },
+    "icons": {
+      "640": "com.sketchware.remod.150.png",
+      "480": "com.sketchware.remod.150.png",
+      "320": "com.sketchware.remod.150.png",
+      "240": "com.sketchware.remod.150.png",
+      "160": "com.sketchware.remod.150.png",
+      "0": "com.sketchware.remod.150.png"
+    },
+    "antiFeatures": [],
+    "packageName": "com.sketchware.remod",
+    "versionCode": 150,
+    "name": "Sketchware Pro",
+    "versionName": "v6.4.0-rc05-minApi21",
+    "minSdkVersion": 21,
+    "targetSdkVersion": 28,
+    "sig": "e967c9e5fd92879f6bac96358de84d90",
+    "signer": "a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc",
+    "size": 88589308,
+    "apkName": "Sketchware.Pro.v6.4.0-rc05-minApi21.apk",
+    "icon": "com.sketchware.remod.150.png",
+    "added": 1752309655.337228
+  },
+  "Sketchware.Pro.v6.4.0-rc05-minApi26.apk": {
+    "hash": "8a5ffb2b0bbf2e6a06a4d84358d9f76784b46d2344c3a3bd00be92825f18e36c",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.ACCESS_WIFI_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.WAKE_LOCK",
+        null
+      ],
+      [
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {
+      "240": "res/mipmap-hdpi-v4/ic_launcher.png",
+      "160": "res/mipmap-mdpi-v4/ic_launcher.png",
+      "320": "res/mipmap-xhdpi-v4/ic_launcher.png",
+      "480": "res/mipmap-xxhdpi-v4/ic_launcher.png",
+      "640": "res/mipmap-xxxhdpi-v4/ic_launcher.png",
+      "-1": "res/mipmap-mdpi-v4/ic_launcher.png"
+    },
+    "icons": {
+      "640": "com.sketchware.remod.150.png",
+      "480": "com.sketchware.remod.150.png",
+      "320": "com.sketchware.remod.150.png",
+      "240": "com.sketchware.remod.150.png",
+      "160": "com.sketchware.remod.150.png",
+      "0": "com.sketchware.remod.150.png"
+    },
+    "antiFeatures": [],
+    "packageName": "com.sketchware.remod",
+    "versionCode": 150,
+    "name": "Sketchware Pro",
+    "versionName": "v6.4.0-rc05-minApi26",
+    "minSdkVersion": 26,
+    "targetSdkVersion": 28,
+    "sig": "e967c9e5fd92879f6bac96358de84d90",
+    "signer": "a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc",
+    "size": 119197239,
+    "apkName": "Sketchware.Pro.v6.4.0-rc05-minApi26.apk",
+    "icon": "com.sketchware.remod.150.png",
+    "added": 1752309656.202519
   }
 }
