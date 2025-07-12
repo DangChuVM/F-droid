@@ -145,5 +145,113 @@
     "size": 12426276,
     "apkName": "org.fdroid.fdroid_1023050.apk",
     "added": 1752294849.89798
+  },
+  "NoobDinoUwU_release.apk": {
+    "hash": "5f53e587198e46e1779feeeb33883dd8a73eacb0d8c59ddebd68405d3162f687",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.CAMERA",
+        null
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.ENFORCE_UPDATE_OWNERSHIP",
+        null
+      ],
+      [
+        "android.permission.INSTALL_PACKAGE_UPDATES",
+        null
+      ],
+      [
+        "android.permission.DELETE_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.INSTALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.BLUETOOTH",
+        null
+      ],
+      [
+        "android.permission.BLUETOOTH_ADMIN",
+        null
+      ],
+      [
+        "android.permission.BLUETOOTH_SCAN",
+        null
+      ],
+      [
+        "android.permission.CHANGE_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.CHANGE_WIFI_STATE",
+        null
+      ],
+      [
+        "android.permission.CAMERA",
+        null
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        null
+      ],
+      [
+        "android.permission.BLUETOOTH_CONNECT",
+        null
+      ],
+      [
+        "android.permission.BIND_JOB_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {
+      "320": "res/drawable-xhdpi-v4/app_icon.png"
+    },
+    "icons": {
+      "320": "com.noobdinouwu.chuong.1.png",
+      "0": "com.noobdinouwu.chuong.1.png"
+    },
+    "antiFeatures": [],
+    "packageName": "com.noobdinouwu.chuong",
+    "versionCode": 1,
+    "name": "NoobDinoUwU",
+    "versionName": "5.4 fixBux",
+    "minSdkVersion": 21,
+    "targetSdkVersion": 34,
+    "sig": "e5aed6b5c5e3db2ada50675645bc7057",
+    "signer": "8cc50afc851b4f40dd52f290f035ccc0548afbfb68800e536a26acff6e6aeb00",
+    "size": 4061937,
+    "apkName": "NoobDinoUwU_release.apk",
+    "icon": "com.noobdinouwu.chuong.1.png",
+    "added": 1752296905.047956
   }
 }
