@@ -23,9 +23,9 @@ jobs:
         run: |
           mkdir -p $HOME/android-sdk-linux
           cd $HOME/android-sdk-linux
-          sudo fdroid update -c
-          sudo fdroid update
-
+          fdroid init
+          fdroid update -c
+          
           wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
           unzip commandlinetools-linux-6858069_latest.zip -d temp-tools
           mkdir -p $HOME/android-sdk-linux/cmdline-tools/latest
@@ -38,6 +38,7 @@ jobs:
       - name: Install platform-tools & build-tools
         run: |
           sdkmanager --sdk_root="$ANDROID_HOME" platform-tools "build-tools;30.0.3"
+          git pull
 
       - name: Pull latest changes
         run: |
