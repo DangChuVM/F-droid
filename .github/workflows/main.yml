@@ -3,8 +3,9 @@ name: F-Droid Auto Update
 on:
   push:
     paths:
-      - 'fdroid/repo/*.apk'     # Tự động chạy khi thêm .apk
-  workflow_dispatch:            # Cho phép chạy thủ công
+      - 'fdroid/repo/*.apk'
+      - 'link.txt'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,25 +14,26 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          lfs: true  # Cho phép push Git LFS
 
-      - name: Install fdroidserver and tools
+      - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y fdroidserver wget unzip git
+          sudo apt-get install -y fdroidserver wget unzip git git-lfs
+          git lfs install
 
       - name: Setup Android SDK (commandline tools r6858069)
         run: |
           mkdir -p $HOME/android-sdk-linux
           cd $HOME/android-sdk-linux
 
-          # Tải và giải nén command line tools
           wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
           unzip commandlinetools-linux-6858069_latest.zip -d temp-tools
           mkdir -p $HOME/android-sdk-linux/cmdline-tools/latest
           mv temp-tools/cmdline-tools/* $HOME/android-sdk-linux/cmdline-tools/latest/
           rm -rf temp-tools
 
-          # Thiết lập biến môi trường
           echo "ANDROID_HOME=$HOME/android-sdk-linux" >> $GITHUB_ENV
           echo "$HOME/android-sdk-linux/cmdline-tools/latest/bin" >> $GITHUB_PATH
 
@@ -45,22 +47,32 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin ${{ github.ref_name }} --rebase
 
+      - name: Download APKs from link.txt
+        if: exists('link.txt')
+        run: |
+          mkdir -p fdroid/repo
+          while IFS= read -r url; do
+            echo "⬇️ Đang tải $url"
+            wget -P fdroid/repo/ "$url"
+          done < link.txt
+
       - name: Run fdroid update inside fdroid/
         run: |
           cd fdroid
           fdroid update
-          fdroid update -c
 
-      - name: Commit and push entire repository if changed
+      - name: Commit and push entire repository if changed (with LFS support)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          git lfs track "*.apk"
+          git add .gitattributes
           git add -A
 
           if git diff --cached --quiet; then
             echo "✅ Không có thay đổi để commit."
           else
-            git commit -m "🤖 Tự động cập nhật toàn bộ repo"
+            git commit -m "🤖 Tự động tải APK, cập nhật repo và đẩy bằng Git LFS"
             git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
           fi

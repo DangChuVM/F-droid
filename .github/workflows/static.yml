@@ -2,6 +2,12 @@
 name: Deploy static content to Pages
 
 on:
+  workflow_run:
+    workflows: ["F-Droid Auto Update"]  # 👈 Tên phải khớp với `name:` trong main.yml
+    types:
+      - completed
+
+on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
