@@ -3,6 +3,7 @@ name: F-Droid Auto Update
 on:
   push:
     paths:
+      - './'
       - 'fdroid/repo/*.apk'
       - 'link.txt'
   workflow_dispatch:
