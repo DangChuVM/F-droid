@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          lfs: true  # Hỗ trợ push file .apk bằng Git LFS
+          lfs: true  # Cho phép dùng Git LFS
 
       - name: Install dependencies
         run: |
@@ -52,8 +52,15 @@ jobs:
           if [ -f "link.txt" ]; then
             mkdir -p fdroid/repo
             while IFS= read -r url; do
-              echo "⬇️ Đang tải $url"
-              wget -P fdroid/repo/ "$url"
+              filename=$(basename "$url")
+              filepath="fdroid/repo/$filename"
+
+              if [ -f "$filepath" ]; then
+                echo "✅ $filename đã tồn tại, bỏ qua tải lại."
+              else
+                echo "⬇️ Đang tải $filename từ $url"
+                wget -O "$filepath" "$url"
+              fi
             done < link.txt
           else
             echo "⚠️ Không tìm thấy link.txt, bỏ qua bước tải APK."
@@ -63,6 +70,7 @@ jobs:
         run: |
           cd fdroid
           fdroid update
+          fdroid update -c
 
       - name: Commit and push entire repository if changed (with LFS support)
         run: |
