@@ -529,5 +529,437 @@
     "size": 179902928,
     "apkName": "Pojav-Glow-Worm-20250419-x86_64.apk",
     "added": 1752307061.336992
+  },
+  "termux-app_v0.119.0-beta.3+apt-android-7-github-debug_arm64-v8a.apk": {
+    "hash": "3bb969df2400d884ccb929b7d79cc76861f291c98942c401e12408d734a460f3",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WAKE_LOCK",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        null
+      ],
+      [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        null
+      ],
+      [
+        "android.permission.READ_LOGS",
+        null
+      ],
+      [
+        "android.permission.DUMP",
+        null
+      ],
+      [
+        "android.permission.WRITE_SECURE_SETTINGS",
+        null
+      ],
+      [
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        null
+      ],
+      [
+        "android.permission.PACKAGE_USAGE_STATS",
+        null
+      ],
+      [
+        "com.android.alarm.permission.SET_ALARM",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {
+      "240": "res/mipmap-hdpi-v4/ic_launcher.png",
+      "160": "res/mipmap-mdpi-v4/ic_launcher.png",
+      "320": "res/mipmap-xhdpi-v4/ic_launcher.png",
+      "480": "res/mipmap-xxhdpi-v4/ic_launcher.png",
+      "640": "res/mipmap-xxxhdpi-v4/ic_launcher.png",
+      "-1": "res/mipmap-mdpi-v4/ic_launcher.png"
+    },
+    "icons": {
+      "640": "com.termux.1022.png",
+      "480": "com.termux.1022.png",
+      "320": "com.termux.1022.png",
+      "240": "com.termux.1022.png",
+      "160": "com.termux.1022.png",
+      "0": "com.termux.1022.png"
+    },
+    "antiFeatures": [],
+    "packageName": "com.termux",
+    "versionCode": 1022,
+    "name": "Termux",
+    "versionName": "0.119.0-beta.3",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 28,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "c3320b7e82d5d4a2f83371b194ee34e3",
+    "signer": "b6da01480eefd5fbf2cd3771b8d1021ec791304bdd6c4bf41d3faabad48ee5e1",
+    "size": 35738948,
+    "apkName": "termux-app_v0.119.0-beta.3+apt-android-7-github-debug_arm64-v8a.apk",
+    "icon": "com.termux.1022.png",
+    "added": 1752308286.90396
+  },
+  "termux-app_v0.119.0-beta.3+apt-android-7-github-debug_armeabi-v7a.apk": {
+    "hash": "cdfb0dd9f118c7079744ac650626596bf987e6a7f52436e5c86cc0c8ba417065",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WAKE_LOCK",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        null
+      ],
+      [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        null
+      ],
+      [
+        "android.permission.READ_LOGS",
+        null
+      ],
+      [
+        "android.permission.DUMP",
+        null
+      ],
+      [
+        "android.permission.WRITE_SECURE_SETTINGS",
+        null
+      ],
+      [
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        null
+      ],
+      [
+        "android.permission.PACKAGE_USAGE_STATS",
+        null
+      ],
+      [
+        "com.android.alarm.permission.SET_ALARM",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {
+      "240": "res/mipmap-hdpi-v4/ic_launcher.png",
+      "160": "res/mipmap-mdpi-v4/ic_launcher.png",
+      "320": "res/mipmap-xhdpi-v4/ic_launcher.png",
+      "480": "res/mipmap-xxhdpi-v4/ic_launcher.png",
+      "640": "res/mipmap-xxxhdpi-v4/ic_launcher.png",
+      "-1": "res/mipmap-mdpi-v4/ic_launcher.png"
+    },
+    "icons": {
+      "640": "com.termux.1022.png",
+      "480": "com.termux.1022.png",
+      "320": "com.termux.1022.png",
+      "240": "com.termux.1022.png",
+      "160": "com.termux.1022.png",
+      "0": "com.termux.1022.png"
+    },
+    "antiFeatures": [],
+    "packageName": "com.termux",
+    "versionCode": 1022,
+    "name": "Termux",
+    "versionName": "0.119.0-beta.3",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 28,
+    "nativecode": [
+      "armeabi-v7a"
+    ],
+    "sig": "c3320b7e82d5d4a2f83371b194ee34e3",
+    "signer": "b6da01480eefd5fbf2cd3771b8d1021ec791304bdd6c4bf41d3faabad48ee5e1",
+    "size": 32808818,
+    "apkName": "termux-app_v0.119.0-beta.3+apt-android-7-github-debug_armeabi-v7a.apk",
+    "icon": "com.termux.1022.png",
+    "added": 1752308287.379391
+  },
+  "termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86.apk": {
+    "hash": "bc6509033a4cf8accf386cc626245d34d68215c21d3568ca678e00bcdece5030",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WAKE_LOCK",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        null
+      ],
+      [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        null
+      ],
+      [
+        "android.permission.READ_LOGS",
+        null
+      ],
+      [
+        "android.permission.DUMP",
+        null
+      ],
+      [
+        "android.permission.WRITE_SECURE_SETTINGS",
+        null
+      ],
+      [
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        null
+      ],
+      [
+        "android.permission.PACKAGE_USAGE_STATS",
+        null
+      ],
+      [
+        "com.android.alarm.permission.SET_ALARM",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {
+      "240": "res/mipmap-hdpi-v4/ic_launcher.png",
+      "160": "res/mipmap-mdpi-v4/ic_launcher.png",
+      "320": "res/mipmap-xhdpi-v4/ic_launcher.png",
+      "480": "res/mipmap-xxhdpi-v4/ic_launcher.png",
+      "640": "res/mipmap-xxxhdpi-v4/ic_launcher.png",
+      "-1": "res/mipmap-mdpi-v4/ic_launcher.png"
+    },
+    "icons": {
+      "640": "com.termux.1022.png",
+      "480": "com.termux.1022.png",
+      "320": "com.termux.1022.png",
+      "240": "com.termux.1022.png",
+      "160": "com.termux.1022.png",
+      "0": "com.termux.1022.png"
+    },
+    "antiFeatures": [],
+    "packageName": "com.termux",
+    "versionCode": 1022,
+    "name": "Termux",
+    "versionName": "0.119.0-beta.3",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 28,
+    "nativecode": [
+      "x86"
+    ],
+    "sig": "c3320b7e82d5d4a2f83371b194ee34e3",
+    "signer": "b6da01480eefd5fbf2cd3771b8d1021ec791304bdd6c4bf41d3faabad48ee5e1",
+    "size": 35020966,
+    "apkName": "termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86.apk",
+    "icon": "com.termux.1022.png",
+    "added": 1752308287.868767
+  },
+  "termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86_64.apk": {
+    "hash": "ecf7b280268ae6963876f5663ed7a00622e458c0425bb41f0ab8e1998bfbbac5",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WAKE_LOCK",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        null
+      ],
+      [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        null
+      ],
+      [
+        "android.permission.READ_LOGS",
+        null
+      ],
+      [
+        "android.permission.DUMP",
+        null
+      ],
+      [
+        "android.permission.WRITE_SECURE_SETTINGS",
+        null
+      ],
+      [
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        null
+      ],
+      [
+        "android.permission.PACKAGE_USAGE_STATS",
+        null
+      ],
+      [
+        "com.android.alarm.permission.SET_ALARM",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {
+      "240": "res/mipmap-hdpi-v4/ic_launcher.png",
+      "160": "res/mipmap-mdpi-v4/ic_launcher.png",
+      "320": "res/mipmap-xhdpi-v4/ic_launcher.png",
+      "480": "res/mipmap-xxhdpi-v4/ic_launcher.png",
+      "640": "res/mipmap-xxxhdpi-v4/ic_launcher.png",
+      "-1": "res/mipmap-mdpi-v4/ic_launcher.png"
+    },
+    "icons": {
+      "640": "com.termux.1022.png",
+      "480": "com.termux.1022.png",
+      "320": "com.termux.1022.png",
+      "240": "com.termux.1022.png",
+      "160": "com.termux.1022.png",
+      "0": "com.termux.1022.png"
+    },
+    "antiFeatures": [],
+    "packageName": "com.termux",
+    "versionCode": 1022,
+    "name": "Termux",
+    "versionName": "0.119.0-beta.3",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 28,
+    "nativecode": [
+      "x86_64"
+    ],
+    "sig": "c3320b7e82d5d4a2f83371b194ee34e3",
+    "signer": "b6da01480eefd5fbf2cd3771b8d1021ec791304bdd6c4bf41d3faabad48ee5e1",
+    "size": 35866023,
+    "apkName": "termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86_64.apk",
+    "icon": "com.termux.1022.png",
+    "added": 1752308288.365885
   }
 }
